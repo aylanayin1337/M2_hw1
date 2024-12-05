@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/green">
+
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        app:layout_constraintVertical_bias="0.02"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_view"
+        app:layout_constraintTop_toBottomOf="@id/text_view"
+        android:layout_margin="30sp"
+        android:hint="Username"
+        android:textSize="23sp"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_height="47dp"/>
+
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/email"
+        app:layout_constraintTop_toTopOf="@id/username"
+        android:textSize="23sp"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30sp" />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/password"
+        app:layout_constraintTop_toTopOf="@id/email"
+        android:layout_margin="30sp"
+        android:textSize="23sp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_margin="90dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_next"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/owlowl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:width="350sp"
+        android:backgroundTint="@color/white"
+        android:text="NEXT"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="Trivia"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
